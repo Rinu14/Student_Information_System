@@ -41,7 +41,6 @@ class Education_InfoController extends Controller
         //
         $board=$request->get('board');
         $percentage/cgpa=$request->get('percentage/cgpa');
-        $symbol_no=$request->get('symbol_no');
         $institute_name=$request->get('institute_name');
         
         try{
@@ -50,7 +49,6 @@ class Education_InfoController extends Controller
         Education_Info::create([
             'board'=>$board,
             'percentage/cgpa'=>$percentage/cgpa,
-            'symbol_no'=>$symbol_no,
             'institute_name'=>$institute_name
 
         ]);
@@ -103,12 +101,10 @@ class Education_InfoController extends Controller
 
         $board=$request->get('board');
         $percentage/cgpa=$request->get('percentage/cgpa');
-        $symbol_no=$request->get('symbol_no');
         $institute_name=$request->get('institute_name');
 
         $education_info['board']= $board;
         $education_info['percentage/cpga']=$percentage/cpga;
-        $education_info['symbol_no']=$symbol_no;
         $education_info['institute_name']=$institute_name;
        
 

@@ -17,8 +17,7 @@ class CreateEducationInfosTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->string('board');
-            $table->integer('percentage/cgpa');
-            $table->integer('symbol_no');
+            $table->integer(percentage/cgpa);
             $table->string('institute_name');
         });
     }
