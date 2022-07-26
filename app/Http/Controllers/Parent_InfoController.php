@@ -78,8 +78,8 @@ class Parent_InfoController extends Controller
     public function show($id)
     {
         //
-        $batch=Batch::find($id);
-        return view ('batch.show',compact('batch'));
+        $parent_info=Parent_Info::find($id);
+        return view ('parent_info.show',compact('parent_info'));
     }
 
     /**

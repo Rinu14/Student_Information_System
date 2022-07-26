@@ -23,7 +23,9 @@
                       <th style="width: 10px">#</th>
                       <th>Board</th>
                       <th>Percentage/Cgpa</th>
+                      <th>Symbol No</th>
                       <th>Institution Name</th>
+
                       <th>Action</th>
                       <th style="width: 40px">Label</th>
                     </tr>
@@ -33,7 +35,8 @@
                     <tr>
                       <td>{{$e->id}}</td>
                       <td>{{$e->board}}</td>
-                      <td>{{$e->percentage/cgpa}}</td>
+                      <td>{{$e->percentage_cgpa}}</td>
+                      <td>{{$e->symbol_no}}</td>
                       <td>{{$e->institute_name}}</td>
                       
                       <td>

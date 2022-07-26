@@ -23,38 +23,40 @@
                       <th style="width: 10px">#</th>
                       <th>Board</th>
                       <th>Percentage/Cgpa</th>
+                      <th>Symbol Number</th>
                       <th>Institution Name</th>
                       <th>Action</th>
                       <th style="width: 40px">Label</th>
                     </tr>
                   </thead>
                   <tbody>
-                    @foreach($education_infos as $e)
+                  
                     <tr>
-                      <td>{{$e->id}}</td>
-                      <td>{{$e->board}}</td>
-                      <td>{{$e->percentage/cgpa}}</td>
-                      <td>{{$e->institute_name}}</td>
+                      <td>{{$education_info->id}}</td>
+                      <td>{{$education_info->board}}</td>
+                      <td>{{$education_info->percentage_cgpa}}</td>
+                      <td>{{$education_info->symbol_no}}</td>
+                      <td>{{$education_info->institute_name}}</td>
                       
                       <td>
-                        <a href ={{route('education_infos.show',$e->id)}}>
+                        <a href ={{route('education_infos.show',$education_info->id)}}>
                           Show
                         </a> |
           
                       </td>
                       <td style="display:flex;">
-                        <a href ={{route('education_infos.edit',$e->id)}}
+                        <a href ={{route('education_infos.edit',$education_info->id)}}
                           class="btn btn-warning btn-sm">
                           Edit
 
                         </a>
-                        <form method="post" action="{{route('education_infos.destroy',$e->id)}}">
+                        <form method="post" action="{{route('education_infos.destroy',$education_info->id)}}">
                         @method('DELETE')
                         @csrf
                         <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                     </tr>
                     </td>
-                    @endforeach
+                    
                   </tbody>
                 </table>
               </div>

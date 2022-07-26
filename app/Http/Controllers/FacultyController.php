@@ -16,7 +16,7 @@ class FacultyController extends Controller
     {
         //
         $faculties=Faculty::all();
-        return view('faculty.index',compact(faculties));
+        return view('faculty.index',compact('faculties'));
     }
 
     /**
@@ -97,11 +97,13 @@ class FacultyController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $faculty=Faculty::find($id);
+
         $name=$request->get('name');
         $is_active=$request->get('is_active');
 
-        $faculty['name']=>'name';
-        $faculty['is_active']=>'is_active';
+        $faculty['name']='name';
+        $faculty['is_active']='is_active';
 
         $faculty->update();
         return redirect()->route('faculties.index');

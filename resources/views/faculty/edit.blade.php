@@ -17,10 +17,10 @@
                 <input type="text" name="name" value ={{$faculty->name}} id="name"/>
                   
                 <label>  is_active    </label>     
-                    <select name="is_active" id="is_active" placeholder="is active?">    
+                    <select value ="{{$faculty->is_active}}" name="is_active" id="is_active" placeholder="is active?">    
                      
-                    <option value="1" value ={{$faculty->is_active}} >True</option>    
-                    <option value="0"value ={{$faculty->is_active}}>False</option>    
+                    <option value="1"  >True</option>    
+                    <option value="0">False</option>    
                        
                     </select>
 

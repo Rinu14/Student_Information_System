@@ -8,9 +8,10 @@ class Education_Info extends Model
 {
     //
     protected $fillable=[
-        board,
-        percentage/cgpa,
-        institute_name
+        'board',
+        'percentage_cgpa',
+        'symbol_no',
+        'institute_name'
 
 
 

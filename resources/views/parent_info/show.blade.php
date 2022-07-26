@@ -3,7 +3,7 @@
 <div class="col-md-6">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">College Registration Table</h3>
+                <h3 class="card-title">Parent Registration Table</h3>
 
                 <div class="card-tools">
                   <ul class="pagination pagination-sm float-right">
@@ -21,8 +21,11 @@
                   <thead>
                     <tr>
                       <th style="width: 10px">#</th>
-                      <th>tu_reg_no</th>
-                      <th>symbol no</th>
+                      <th>father's Name</th>
+                      <th>mother's Name</th>
+                      <th>parent's Name</th>
+                      <th>mobile</th>
+                      <th>email</th>
                       
                       <th style="width: 40px">Label</th>
                     </tr>
@@ -30,9 +33,13 @@
                   <tbody>
                    
                     <tr>
-                      <td>{{$college_info->id}}</td>
-                      <td>{{$college_info->tu_reg_no}}</td>
-                      <td>{{$college_info->symbol_no}}</td>
+                      <td>{{$parent_info->id}}</td>
+                      <td>{{$parent_info->father_name}}</td>
+                      <td>{{$parent_info->mother_name}}</td>
+                      <td>{{$parent_info->parent_name}}</td>
+                      <td>{{$parent_info->mobile}}</td>
+                      <td>{{$parent_info->email}}</td>
+          
                       
                     </tr>
                    

@@ -8,7 +8,7 @@ class Faculty extends Model
 {
     //
     protected $fillable=[
-        name,
-        is_active
+        'name',
+        'is_active'
     ];
 }
